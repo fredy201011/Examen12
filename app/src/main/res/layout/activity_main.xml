@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#368ed7">
+
+
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:id="@+id/profilePicture"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_above="@+id/text_details"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/text_details"
+        android:gravity="center"
+        android:layout_above="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sesión no iniciada"
+        />
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ad_view"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9934156137428196/9753655668"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="89dp"
+        android:background="#e92323">
+
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
